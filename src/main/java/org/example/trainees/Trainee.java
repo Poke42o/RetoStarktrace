@@ -9,7 +9,7 @@ public class Trainee extends Experience{
     private String photo;
     private String name;
     private String lastName;
-    private String Description;
+    private String description;
     private Integer timeExperience;
     private String lastEnterprise;
     private LocalDate registrationDate;
@@ -24,7 +24,7 @@ public class Trainee extends Experience{
         this.photo = photo;
         this.name = name;
         this.lastName = lastName;
-        Description = description;
+        this.description = description;
         this.timeExperience = timeExperience;
         this.lastEnterprise = lastEnterprise;
         this.registrationDate = registrationDate;
@@ -46,7 +46,7 @@ public class Trainee extends Experience{
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public Integer getTimeExperience() {
