@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 header {
     display: flex;
     align-items: center;
@@ -22,11 +21,11 @@ header p {
     font-weight: bold;
 }
 
-section{
+section {
     margin: 0px 70px;
 }
 
-.trainee-image{
+.trainee-image {
     border: solid 1px #D6EE52;
 }
 
@@ -89,7 +88,7 @@ section{
     padding-left: 30px;
     font-size: 18px;
     line-height: 28px;
-    
+
 }
 
 .skill-items-container {
@@ -114,7 +113,7 @@ section{
     font-weight: bold;
 }
 
-footer{
+footer {
     width: 100%;
     background-color: #D6EE52;
     height: 40px;
@@ -123,8 +122,10 @@ footer{
 
 @media (max-width: 480px) {
     .trainee-image {
-        width: 200px;   /* más pequeño */
-        margin: 0 auto; /* centrado */
+        width: 200px;
+        /* más pequeño */
+        margin: 0 auto;
+        /* centrado */
         display: block;
     }
 }
