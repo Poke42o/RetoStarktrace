@@ -10,13 +10,12 @@ public class Trainee extends Experience{
     private String name;
     private String lastName;
     private String description;
-    private Integer timeExperience;
     private String lastEnterprise;
     private LocalDate registrationDate;
-    private boolean isActive;
     private List <String> skills;
     private Map <String, String> lenguage;
-
+    private List<String> responsibilities;
+    private List<String> tools;
     public Trainee() {
     }
 
@@ -25,10 +24,8 @@ public class Trainee extends Experience{
         this.name = name;
         this.lastName = lastName;
         this.description = description;
-        this.timeExperience = timeExperience;
         this.lastEnterprise = lastEnterprise;
         this.registrationDate = registrationDate;
-        this.isActive = isActive;
         this.skills = skills;
         this.lenguage = lenguage;
     }
@@ -49,9 +46,6 @@ public class Trainee extends Experience{
         return description;
     }
 
-    public Integer getTimeExperience() {
-        return timeExperience;
-    }
 
     public String getLastEnterprise() {
         return lastEnterprise;
@@ -61,9 +55,6 @@ public class Trainee extends Experience{
         return registrationDate;
     }
 
-    public boolean isActive() {
-        return isActive;
-    }
 
     public List<String> getSkills() {
         return skills;
@@ -77,5 +68,28 @@ public class Trainee extends Experience{
     public List<Object> addExperience(String nameEntity, String city, String country, LocalDate startDate, LocalDate finishDate, String PositionOrCualification) {
         return List.of(nameEntity,city,country,startDate,finishDate, PositionOrCualification);
     }
+
+    public Object addResponsibilities(List<String> list, String... responsibilities){
+        for (String responsability : responsibilities){
+            list.add(responsability);
+        }
+        return this.responsibilities = List.of(responsibilities);
+    }
+
+    public List<String> getResponsibilities() {
+        return responsibilities;
+    }
+
+    public Object addTools(List<String> list, String... tools){
+        for (String tool : tools){
+            list.add(tool);
+        }
+        return this.tools = List.of(tools);
+    }
+
+    public List<String> getTools() {
+        return tools;
+    }
+
 
 }
